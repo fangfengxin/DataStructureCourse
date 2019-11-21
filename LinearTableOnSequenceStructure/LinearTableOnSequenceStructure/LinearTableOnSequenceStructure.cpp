@@ -276,7 +276,7 @@ status PriorElem(SqList L, ElemType cur, ElemType& pre_e) {
 	ElemType* p = NULL, * q = L.elem;
 	while (*q != cur && q <= &L.elem[L.length - 1])
 		p = q++;
-	if (q <= &L.elem[L.length] - 1) {
+	if (q <= &L.elem[L.length - 1]) {
 		pre_e = *p;
 		return OK;
 	}
